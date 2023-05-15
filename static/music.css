@@ -1,0 +1,133 @@
+body {
+  background-color: #28223f;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  align-items: center;
+  background-color: #231e39;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  position: relative;
+  height: 650px;
+  width: 450px;
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.9em;
+}
+
+li {
+  list-style-type: none;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 12px;
+  margin: 0;
+  color: #b3b8cd;
+}
+
+.listen {
+  background-color: #2a2342;
+  border: none;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  width: 240px;
+  line-height: 1.5em;
+  padding: 10px 25px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.listen:hover {
+  background-color: #30274b;
+  transition: 0.5s;
+}
+
+.stop {
+  background-color: #2a2342;
+  border: none;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  width: 50px;
+  line-height: 1.5em;
+  padding: 20px 15px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.stop:hover {
+  background-color: #30274b;
+  transition: 0.5s;
+}
+
+.remove {
+  background-color: #b73117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.remove:hover {
+  background-color: #d33c1e;
+  transition: 0.5s;
+}
+
+.add {
+  background-color: #00b774;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+.add:hover {
+  background-color: #00d989;
+  transition: 0.5s;
+}
+
+.exit {
+  color: #fff;
+  outline: none;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 15px 25px;
+  margin: 20px 0 20px 0;
+  border-radius: 8px;
+  background: #001c84;
+}
+
+.exit:hover {
+  background-color: #0225a3;
+  transition: 0.5s;
+}

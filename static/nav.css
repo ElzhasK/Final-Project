@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  background: #231e39;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+
+.sidebar a {
+  color: #fff;
+}
+
+.sidebar.close {
+  float: left;
+  width: 10%;
+}
+.sidebar .nav-links {
+  height: 100%;
+  line-height: 40px;
+  padding: 50px 10px;
+  overflow: auto;
+}
+.sidebar.close .nav-links {
+  overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar {
+  display: none;
+}
+.sidebar .nav-links li {
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li .iocn-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.close .nav-links li .iocn-link {
+  display: block;
+}
+
+.sidebar .nav-links li :hover {
+  color: #f8f8f8;
+  background: #231e39;
+}
+
+.sidebar .nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.sidebar .nav-links li .sub-menu {
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #231e39;
+  display: none;
+}
+
+.sidebar .nav-links li .sub-menu a {
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover {
+  opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu {
+  position: absolute;
+  padding: 10px 20px;
+  opacity: 0;
+  display: block;
+  left: 100%;
+  top: 0px;
+  pointer-events: none;
+}
+.sidebar.close .nav-links li:hover .sub-menu {
+  position: absolute;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li .sub-menu .link_name {
+  display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name {
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+
+@media (max-width: 420px) {
+  .sidebar.close .nav-links li .sub-menu {
+    display: none;
+  }
+}
+
+.d {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  float: right;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+}
+
+.container .link_name {
+  text-decoration: none;
+  color: black;
+}
+
+.container .link_name:hover {
+  color: #1e90ff;
+}
+
+.first {
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.block1 {
+  margin: 5px;
+  float: left;
+  width: 500px;
+  height: 150px;
+  background-color: #008b8b;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  transition: filter 0.3s ease;
+}
+
+.block2 {
+  margin: 5px;
+  transition: filter 0.3s ease;
+  float: right;
+  width: 500px;
+  height: 150px;
+  background-color: #f4a460;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.block3 {
+  margin: 5px;
+  transition: transform 0.3s ease;
+  float: left;
+  width: 500px;
+  height: 150px;
+  background-color: #ee82ee;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.block4 {
+  margin: 5px;
+  transition: transform 0.3s ease;
+  float: right;
+  width: 500px;
+  height: 150px;
+  background-color: #00ced1;
+  border-radius: 10px;
+  transition: filter 0.3s ease;
+}
+
+.container .first .btext {
+  color: white;
+  padding-top: 15px;
+  padding-left: 35px;
+}
+
+.container .first .logos {
+  width: 65px;
+  height: 65px;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.block1:hover {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+.block2:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
+.block3:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
+.block4:hover {
+  transform: scale(1.03);
+  filter: brightness(0.95);
+}
